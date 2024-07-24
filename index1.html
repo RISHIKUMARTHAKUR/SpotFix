@@ -1,0 +1,35 @@
+<link href='index1.css' rel='stylesheet'>
+<script src="index1.js"></script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <div class="container">
+        <centre><h3><i><b></b>SpotFix</i></h3></centre>
+          <h1>Problem Reporting Dashboard</h1>
+        <div class="form-container">
+            <h2>Report a Problem</h2>
+            <form id="problem-form">
+                <div class="drop-zone" id="drop-zone">
+                    <p>Drag & drop an image/video here or click to select</p>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+                <textarea id="problem-description" placeholder="Describe the problem..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
